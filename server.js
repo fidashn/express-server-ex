@@ -3,7 +3,7 @@ const app = express()
 
 app.get('/', (req, res)=>{
   console.log('here')
-  res.sendStatus(500)
+  res.render('index')
 })
 
 app.listen(3000)

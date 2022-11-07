@@ -8,12 +8,6 @@ app.get('/', (req, res)=>{
   res.render('index', {text: 'world'})
 })
 
-app.get('/users', (req, res)=>{
-  res.send('Users List')
-})
 
-app.get('/users/new', (req, res)=>{
-  res.send('Users New Form')
-})
 
 app.listen(3000)

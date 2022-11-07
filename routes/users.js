@@ -43,7 +43,7 @@ router.post('/', (req, res)=>{
       })
 
   router.param('id', (req, res, next, id)=>{
-    
+    console.log(id)
   })
 
 

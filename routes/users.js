@@ -31,14 +31,16 @@ router.post('/', (req, res)=>{
 // })
 
 //********much better & queue!  */
-  router.route('/:id').get('/:id', (req, res)=>{
-    req.params.id
+  router
+  .route('/:id')
+  .get( (req, res)=>{
+    console.log(req.user)
     res.send(`Get User With Id ${req.params.id}`)
-  }).put('/:id', (req, res)=>{
-      req.params.id
+  }).put( (req, res)=>{
+     
       res.send(`Update User With Id ${req.params.id}`)
-    }).delete('/:id', (req, res)=>{
-        req.params.id
+    }).delete( (req, res)=>{
+        
         res.send(`Delete User With Id ${req.params.id}`)
       })
 

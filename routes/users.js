@@ -8,3 +8,5 @@ router.get('/', (req, res)=>{
 router.get('/new', (req, res)=>{
   res.send('Users New Form')
 })
+
+module.exports = router

@@ -8,7 +8,7 @@ router.get('/', (req, res)=>{
 })
 
 router.get('/new', (req, res)=>{
-  res.send('Users New Form')
+  res.render('users/new', {firstName: 'Test'})
 })
 
 router.post('/', (req, res)=>{
@@ -36,7 +36,7 @@ router.post('/', (req, res)=>{
   router
   .route('/:id')
   .get( (req, res)=>{
-    console.log(req.user)
+    // console.log(req.user)
     res.send(`Get User With Id ${req.params.id}`)
   }).put( (req, res)=>{
      

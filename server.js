@@ -8,6 +8,6 @@ app.get('/', (req, res)=>{
   res.render('index', {text: 'world'})
 })
 
-
+const userRouter = require('./routes/users')
 
 app.listen(3000)

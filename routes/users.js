@@ -15,7 +15,7 @@ router.post('/', (req, res)=>{
 
 router.get('/:id', (req, res)=>{
   req.params.id
-  res.send('User Get')
+  res.send(`Get User With Id ${req.params.id}`)
 })
 
 

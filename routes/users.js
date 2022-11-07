@@ -8,7 +8,7 @@ router.get('/', (req, res)=>{
 })
 
 router.get('/new', (req, res)=>{
-  res.render('users/new', {firstName: 'Test'})
+  res.render('users/new')
 })
 
 router.post('/', (req, res)=>{

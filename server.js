@@ -5,7 +5,7 @@ app.set('view engine', 'ejs')
 
 app.get('/', (req, res)=>{
   console.log('here')
-  res.render('index', {text: 'world'})
+  res.render('index', {text: 'world OF'})
 })
 
 app.listen(3000)

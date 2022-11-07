@@ -1,3 +1,6 @@
+const express = require('express')
+const router = express.Router()
+
 app.get('/users', (req, res)=>{
   res.send('Users List')
 })

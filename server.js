@@ -10,4 +10,6 @@ app.get('/', (req, res)=>{
 
 const userRouter = require('./routes/users')
 
+app.use('/users')
+
 app.listen(3000)

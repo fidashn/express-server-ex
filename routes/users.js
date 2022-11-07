@@ -42,8 +42,10 @@ router.post('/', (req, res)=>{
         res.send(`Delete User With Id ${req.params.id}`)
       })
 
+   const users = [{ name: 'Kyle' }, { name: 'Sally' }]   
+
   router.param('id', (req, res, next, id)=>{
-    console.log(id)
+    req.user = users[id]
     next()
   })
 

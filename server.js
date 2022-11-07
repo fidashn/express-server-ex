@@ -4,10 +4,10 @@ const app = express()
 app.set('view engine', 'ejs')
 
 
-app.get('/', (req, res)=>{
-  console.log('here')
-  res.render('index', {text: 'world'})
-})
+// app.get('/', (req, res)=>{
+//   console.log('here')
+//   res.render('index', {text: 'world'})
+// })
 
 const userRouter = require('./routes/users')
 
